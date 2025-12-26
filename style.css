@@ -143,4 +143,16 @@ footer a:hover {
   color: var(--accent);
 }
 
+/* Featured flagship case study */
+.card.featured {
+  border-left: 3px solid #1a73e8;
+  background: #ffffff;
+}
 
+/* Subtitle under case title */
+.case-subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: -6px;
+  margin-bottom: 10px;
+}
