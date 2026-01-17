@@ -1,9 +1,9 @@
 :root {
   --bg: #f9fafb;
   --card: #ffffff;
+  --border: #e5e7eb;
   --text: #111827;
   --muted: #6b7280;
-  --border: #e5e7eb;
   --accent: #2563eb;
 }
 
@@ -11,15 +11,15 @@
 
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: var(--card);
+  background: white;
   border-bottom: 1px solid var(--border);
 }
 
@@ -40,43 +40,40 @@ h2 {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
+  padding: 24px;
   margin-bottom: 24px;
-  overflow: hidden;
-}
-
-.card-header {
-  padding: 22px;
   cursor: pointer;
+  transition: box-shadow 0.2s ease;
 }
 
-.card-header:hover {
-  background: #f3f4f6;
+.card:hover {
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
 }
 
-.case-subtitle {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.toggle-text {
-  color: var(--accent);
-  font-weight: 500;
-}
+.muted { color: var(--muted); }
 
 .card-body {
   display: none;
-  padding: 22px;
-  border-top: 1px solid var(--border);
+  margin-top: 16px;
 }
 
 .card.open .card-body {
   display: block;
 }
 
-.card-body img {
-  max-width: 100%;
-  border-radius: 10px;
+.toggle {
+  display: inline-block;
   margin-top: 14px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.artifact {
+  margin-top: 16px;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
 }
 
 footer {
