@@ -1,17 +1,19 @@
 function toggleCard(header) {
-  const card = header.parentElement;
+  const card = header.closest(".card");
   const allCards = document.querySelectorAll(".card.expandable");
 
   allCards.forEach(c => {
     if (c !== card) {
       c.classList.remove("open");
-      c.querySelector(".toggle-text").textContent = "Open full case →";
+      const t = c.querySelector(".toggle-text");
+      if (t) t.textContent = "Open full case →";
     }
   });
 
-  const isOpen = card.classList.contains("open");
-
   card.classList.toggle("open");
-  header.querySelector(".toggle-text").textContent =
-    isOpen ? "Open full case →" : "Collapse ↑";
+
+  const toggle = header.querySelector(".toggle-text");
+  toggle.textContent = card.classList.contains("open")
+    ? "Collapse ↑"
+    : "Open full case →";
 }
