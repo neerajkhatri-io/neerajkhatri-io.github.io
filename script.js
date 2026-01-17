@@ -1,13 +1,17 @@
-const cards = document.querySelectorAll('.case-card');
+function toggleCard(header) {
+  const card = header.parentElement;
+  const allCards = document.querySelectorAll(".card.expandable");
 
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    const isOpen = card.classList.contains('active');
-
-    cards.forEach(c => c.classList.remove('active'));
-
-    if (!isOpen) {
-      card.classList.add('active');
+  allCards.forEach(c => {
+    if (c !== card) {
+      c.classList.remove("open");
+      c.querySelector(".toggle-text").textContent = "Open full case →";
     }
   });
-});
+
+  const isOpen = card.classList.contains("open");
+
+  card.classList.toggle("open");
+  header.querySelector(".toggle-text").textContent =
+    isOpen ? "Open full case →" : "Collapse ↑";
+}
