@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neeraj Khatri | Systems, Product Thinking & Applied AI</title>
+  <title>Neeraj Khatri | Systems & Product Thinking</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,142 +18,149 @@
 
 <main class="container">
 
-  <section>
-    <h2>How I Think</h2>
-    <p>
-      I approach problems through the lens of user empathy, constraints, and long-term leverage.
-      My background in engineering shapes how I reason about systems, trade-offs, and adoption —
-      and how I use automation and AI to reduce repetitive thinking and cognitive load.
-    </p>
-    <p>
-      I am particularly interested in problems where clarity, trust, and decision-making
-      matter more than speed or surface-level optimisation.
-    </p>
-  </section>
+<section>
+  <h2>How I Think</h2>
+  <p>
+    I approach problems through the lens of user empathy, constraints, and long-term leverage.
+    My background in engineering shapes how I reason about systems, trade-offs, and adoption —
+    and how I use automation and AI to reduce repetitive thinking and cognitive load.
+  </p>
+  <p>
+    I am particularly interested in problems where clarity, trust, and decision-making
+    matter more than speed or surface-level optimisation.
+  </p>
+</section>
 
-  <section>
-    <h2>Flagship Work</h2>
+<section>
+  <h2>Flagship Work</h2>
 
-    <!-- CARD -->
-    <div class="case-card">
-      <div class="case-header">
-        <h3>Design Change Impact Intelligence</h3>
-        <p class="case-subtitle">
-          Decision-support system for prioritising changes in complex engineering projects
-        </p>
-      </div>
-
-      <div class="case-body">
-        <p>
-          Explores how teams classify and prioritise late-stage design changes under time pressure,
-          balancing risk, cost, and downstream impact using structured decision logic.
-        </p>
-        <a href="https://github.com/neerajkhatri-io/product-case-studies/tree/main/design-change-impact-intelligence" target="_blank">
-          Open full case →
-        </a>
-      </div>
+  <!-- CARD 1 -->
+  <div class="card expandable">
+    <div class="card-header" onclick="toggleCard(this)">
+      <h3>Design Change Impact Intelligence</h3>
+      <p class="case-subtitle">
+        Decision-support system for prioritising changes in complex engineering projects
+      </p>
+      <span class="toggle-text">Open full case →</span>
     </div>
 
-    <!-- CARD -->
-    <div class="case-card">
-      <div class="case-header">
-        <h3>Applied AI & Automation</h3>
-        <p class="case-subtitle">
-          Reducing repetitive decision-making through logic-driven automation
-        </p>
-      </div>
+    <div class="card-body">
+      <p>
+        Late design changes often arrive under time pressure, with incomplete information
+        and competing stakeholder priorities.
+      </p>
+      <p>
+        This case explores how structured decision logic and AI-assisted signals
+        can help teams assess impact, risk, and urgency — without replacing expert judgment.
+      </p>
+    </div>
+  </div>
 
-      <div class="case-body">
-        <p>
-          Designed a structured decision system to reduce ad-hoc training and capability decisions
-          in a growing organisation using Python and AI-assisted reasoning.
-        </p>
-        <a href="https://github.com/neerajkhatri-io/product-case-studies/tree/main/applied-ai-automation" target="_blank">
-          Open full case →
-        </a>
-      </div>
+  <!-- CARD 2 -->
+  <div class="card expandable">
+    <div class="card-header" onclick="toggleCard(this)">
+      <h3>Applied AI & Automation</h3>
+      <p class="case-subtitle">
+        Reducing repetitive decision-making through logic-driven automation
+      </p>
+      <span class="toggle-text">Open full case →</span>
     </div>
 
-    <!-- CARD -->
-    <div class="case-card">
-      <div class="case-header">
-        <h3>Calm Kitchen</h3>
-        <p class="case-subtitle">
-          Designing a low-stress meal planning experience
-        </p>
-      </div>
+    <div class="card-body">
+      <p>
+        In growing organisations, training and capability decisions are often made ad-hoc,
+        driven by individual judgment rather than structured logic.
+      </p>
+      <p>
+        I designed a Python-based decision system that classified skills, roles,
+        and proficiency levels to surface training needs consistently and at scale.
+      </p>
+    </div>
+  </div>
 
-      <div class="case-body">
-        <p>
-          A UX exploration into reducing decision fatigue by minimising choices
-          and prioritising emotional ease over control.
-        </p>
-
-        <!-- VISUAL (already added by you) -->
-        <img
-          src="product-case-studies/decision-fatigue-reduction-ux/artifacts/Flow.png"
-          alt="Calm Kitchen system flow"
-          class="case-image"
-        />
-
-        <a href="https://github.com/neerajkhatri-io/product-case-studies/tree/main/decision-fatigue-reduction-ux" target="_blank">
-          Open full case →
-        </a>
-      </div>
+  <!-- CARD 3 (WITH IMAGE) -->
+  <div class="card expandable">
+    <div class="card-header" onclick="toggleCard(this)">
+      <h3>Calm Kitchen</h3>
+      <p class="case-subtitle">
+        Designing a low-stress meal planning experience
+      </p>
+      <span class="toggle-text">Open full case →</span>
     </div>
 
-    <!-- CARD -->
-    <div class="case-card">
-      <div class="case-header">
-        <h3>Pet Grooming Market Entry (Zepto)</h3>
-        <p class="case-subtitle">
-          Trust, feasibility, and operational constraints in a sensitive category
-        </p>
-      </div>
+    <div class="card-body">
+      <p>
+        Meal planning is often framed as a productivity problem,
+        but in reality it is an emotional and cognitive load problem.
+      </p>
 
-      <div class="case-body">
-        <p>
-          Market and user research to evaluate entry into the pet grooming space,
-          focusing on trust signals, expectations, and service reliability.
-        </p>
-        <a href="https://github.com/neerajkhatri-io/product-case-studies/tree/main/market-entry-decision-pet-grooming" target="_blank">
-          Open full case →
-        </a>
-      </div>
+      <img
+        src="/product-case-studies/decision-fatigue-reduction-ux/artifacts/Flow.png"
+        alt="Calm Kitchen system flow"
+        class="case-image"
+      />
+
+      <p>
+        The experience prioritised emotional ease over control by reducing choices,
+        supporting gradual commitment, and allowing flexible adjustment.
+      </p>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card expandable">
+    <div class="card-header" onclick="toggleCard(this)">
+      <h3>Pet Grooming Market Entry (Zepto)</h3>
+      <p class="case-subtitle">
+        Trust, feasibility, and operational constraints in a sensitive category
+      </p>
+      <span class="toggle-text">Open full case →</span>
     </div>
 
-    <!-- CARD -->
-    <div class="case-card">
-      <div class="case-header">
-        <h3>Reliability & Guarantees (Uber Reserve)</h3>
-        <p class="case-subtitle">
-          Managing expectations in time-critical bookings
-        </p>
-      </div>
+    <div class="card-body">
+      <p>
+        This study evaluated entry into the pet grooming space through user research,
+        trust signals, and service reliability considerations.
+      </p>
+    </div>
+  </div>
 
-      <div class="case-body">
-        <p>
-          Analysed how perceived guarantees, buffers, and communication influence
-          user confidence in high-stakes scheduled rides.
-        </p>
-        <a href="https://github.com/neerajkhatri-io/product-case-studies/tree/main/reliability-expectation-management" target="_blank">
-          Open full case →
-        </a>
-      </div>
+  <!-- CARD 5 -->
+  <div class="card expandable">
+    <div class="card-header" onclick="toggleCard(this)">
+      <h3>Reliability & Guarantees (Uber Reserve)</h3>
+      <p class="case-subtitle">
+        Managing expectations in time-critical bookings
+      </p>
+      <span class="toggle-text">Open full case →</span>
     </div>
 
-  </section>
+    <div class="card-body">
+      <p>
+        Analysed how buffers, guarantees, and communication influence perceived reliability
+        and user confidence in high-stakes scheduled rides.
+      </p>
+    </div>
+  </div>
 
-  <section>
-    <h2>Resume</h2>
-    <p>
-      For a deeper view of my background, experience, and approach to building
-      systems and products under constraints.
-    </p>
-    <a class="resume-link" href="resume/Neeraj_Khatri_AI_PM_Resume.pdf" target="_blank">
-      View Resume →
-    </a>
-  </section>
+</section>
+
+<section class="resume-cta">
+  <h2>Resume</h2>
+  <p>
+    For a deeper view of my background, experience, and approach to building
+    systems and products under constraints.
+  </p>
+
+  <a
+    class="resume-link"
+    href="resume/Neeraj_Khatri_AI_PM_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Resume →
+  </a>
+</section>
 
 </main>
 
